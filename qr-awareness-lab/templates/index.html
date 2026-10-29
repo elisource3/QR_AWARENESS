@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Miao stronzetto!</title>
+
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <main class="cat-card">
+    <h1>Miao stronzetto!</h1>
+
+    <img
+      class="cat-photo"
+      src="{{ url_for('static', filename='images/cat.jpg') }}"
+      alt="Gatto bianco che guarda verso la fotocamera"
+    >
+
+    <p>Premi il pulsante per farmi sorridere!</p>
+
+    <a class="cat-button" href="{{ url_for('awareness') }}">
+      smile
+    </a>
+  </main>
+
+</body>
+</html>
