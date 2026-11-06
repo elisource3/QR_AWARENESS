@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scopri i rischi del Quishing e come proteggerti dai QR code malevoli.">
+  <title>Did you click on the link, didn't you?</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="card awareness-card">
+    <p class="eyebrow">ESPERIMENTO SOCIALE DI CYBERSECURITY AWARENESS</p>
+
+    <img
+  class="illustration-image"
+  src="{{ url_for('static', filename='images/pawned.jpg') }}"
+  alt="Immagine di sensibilizzazione sui rischi del phishing"
+    >
+
+    <h1>Hai cliccato sul link, non è vero?</h1>
+
+    <p class="intro">
+      Sapevamo che da bravo curiosone avresti scansionato quel QR code senza pensarci due volte!
+      Ora sei stato hackerato e abbiamo preso il controllo di tutte le tue password :)
+    </p>
+
+    <p>
+      Scherzavo, per ora sei salvo...
+      Il problema è che anche i veri hacker ora conoscono questo trucchetto.
+      Si chiama <strong>Quishing</strong>: la fusione tra i comuni QR code e il phishing.
+      È una tecnica che sfrutta codici QR malevoli per portare le vittime
+      su siti fraudolenti, rubare credenziali personali o password aziendali
+      e tentare di compromettere dispositivi e account.
+    </p>
+
+    <section class="lesson">
+      <h2>Il problema? A prima vista, un QR code falso può essere indistinguibile da uno legittimo.</h2>
+
+      <h2>Tre regole per proteggere il tuo dispositivo (e la tua sanità mentale)</h2>
+
+      <ul>
+        <li>
+          <strong>Controlla l'anteprima del link.</strong>
+          Prima di aprire il collegamento proposto dal telefono,
+          controlla l'indirizzo del sito. Se il dominio è insolito,
+          contiene errori sospetti o non corrisponde a quello che ti
+          aspettavi, non procedere.
+        </li>
+        <li>
+          <strong>Occhio agli adesivi nei luoghi pubblici.</strong>
+          Su parcometri, totem, manifesti e cartelli, verifica che il QR code
+          non sia un adesivo applicato sopra quello originale. In caso di dubbi,
+          usa un canale ufficiale alternativo.
+        </li>
+        <li>
+          <strong>Non avere fretta.</strong>
+          Diffida di messaggi che promettono premi, richiedono pagamenti urgenti
+          o ti spingono ad agire immediatamente. Fermarti un secondo a verificare
+          può evitarti problemi ben più grandi.
+        </li>
+      </ul>
+
+      <h2>Calmo, puoi tirare un sospiro di sollievo!</h2>
+
+      <p>
+        Se hai appena scansionato il codice per arrivare qui, niente panico:
+        <strong>questo era solo un test di consapevolezza sulla sicurezza informatica!</strong>
+      </p>
+
+      <p>
+        L'esperimento è stato progettato per sensibilizzare sui rischi del Quishing.
+        Non ti è stato chiesto di inserire credenziali e il test non raccoglie password, indirizzi IP o qualsiasi
+        forma di dato personale.
+        Le eventuali statistiche registrate riguardano gli eventi di navigazione
+        previsti dall'esperimento.
+        Il progetto è stato realizzato a fini statistici e garantendo conformità rispetto al GDPR.
+      </p>
+    </section>
+
+    <p class="closing">
+      La lezione? La curiosità è una buona cosa, ma online conviene abbinarla
+      ad un pizzico di prudenza. La prossima volta, prima di scansionare,
+      fermati un secondo e controlla.
+    </p>
+
+    <p class="small">
+      Questo esperimento ha finalità esclusivamente educative.
+      Non inserire password o altri dati personali in pagine di cui non hai verificato l'origine.
+    </p>
+  </main>
+</body>
+</html>
+```
