@@ -1,0 +1,11 @@
+services:
+  qr-awareness:
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      PORT: "5000"
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
