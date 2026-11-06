@@ -174,6 +174,15 @@ def manage_session():
 
     now = int(time.time())
     last_activity = session.get("last_activity_at")
+    app.logger.info(
+        "SESSION DEBUG | path=%s | last=%s | now=%s | idle=%s | qr=%s | pending=%s",
+        request.path,
+        last_activity,
+        now,
+        now - last_activity if last_activity is not None else None,
+        request.cookies.get("qr_visited"),
+        session.get("return_visit_pending")
+    )
 
     if (
         last_activity is not None
